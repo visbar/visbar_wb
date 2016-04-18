@@ -1,4 +1,4 @@
-# VisBAR Wave Batch (JP)  
+# VisBAR Wave Batch 
 ## Description
 VisBAR_wave _batch[*]は、Pythonによる、電子波動関数の可視化ツールです。  
 
