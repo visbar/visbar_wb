@@ -1,0 +1,5 @@
+C C 3.0
+C H 2.2
+H C 2.2
+H H 1.0
+--end_setting--
