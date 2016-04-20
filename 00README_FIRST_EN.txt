@@ -7,7 +7,9 @@ If you use VisBAR_wave_batch in a publication, please cite the paper [1].
 Details are explained in the japanase manual.
 An english manual is in preparation.  
 
-[*] http://www.damp.tottori-u.ac.jp/~hoshi/visbar/
+[*] 
+https://github.com/visbar/visbar_wb
+http://www.damp.tottori-u.ac.jp/~hoshi/visbar/
 
 [1] Takeo Hoshi, Yohei Akiyama, Tatsunori Tanaka and Takahisa Ohno, 
 "Ten-million-atom electronic structure calculations on the K computer with a massively parallel order-N theory",
