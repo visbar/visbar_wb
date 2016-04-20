@@ -8,8 +8,8 @@ VisBAR_wave _batch は、「VisBAR」パッケージ(VisBAR=Visualization tool w
 詳細は、日本語版マニュアルに記されています。  
 英語版マニュアルは準備中です。  
 
-[*] 
-https://github.com/visbar/visbar_wb 
+[*]  
+https://github.com/visbar/visbar_wb  
 http://www.damp.tottori-u.ac.jp/~hoshi/visbar/  
 
 [1] Takeo Hoshi, Yohei Akiyama, Tatsunori Tanaka and Takahisa Ohno,   
