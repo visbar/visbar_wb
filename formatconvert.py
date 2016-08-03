@@ -59,36 +59,28 @@ def cube_vtk(input_dir,filenametext,boundary_mode):
     #print cube_list
     #print all_atom
     if boundary_mode == True:  #20150310
+        periodic_init = (float(cube_list[2][2]),float(cube_list[2][3]),float(cube_list[2][4]))
+        L = (int(cube_list[3][1])*float(cube_list[3][2]),
+             int(cube_list[4][1])*float(cube_list[4][3]),
+             int(cube_list[5][1])*float(cube_list[5][4]))
+        periodic_end = (float(cube_list[2][2])+L[0],
+                        float(cube_list[2][3])+L[1],
+                        float(cube_list[2][4])+L[2])
         for i in xrange(0,new_cube):
-            if float(all_atom[i][3]) > float(cube_list[2][2])*(-1):
-                kyori=(float(all_atom[i][3])-float(cube_list[2][2]))/(float(cube_list[2][2])*(-2))
-                all_atom[i][3]=str(float(all_atom[i][3])+float(cube_list[2][2])*int(kyori)*2)
+            while float(all_atom[i][2]) > periodic_end[0]:
+                all_atom[i][2] = str(float(all_atom[i][2]) - L[0])
+            while float(all_atom[i][2]) < periodic_init[0]:
+                all_atom[i][2] = str(float(all_atom[i][2]) + L[0])
 
+            while float(all_atom[i][3]) > periodic_end[1]:
+                all_atom[i][3] = str(float(all_atom[i][3]) - L[1])
+            while float(all_atom[i][3]) < periodic_init[1]:
+                all_atom[i][3] = str(float(all_atom[i][3]) + L[1])
 
-
-
-            elif float(all_atom[i][3]) < float(cube_list[2][2]):
-                kyori=(float(all_atom[i][3])+float(cube_list[2][2]))/(float(cube_list[2][2])*(-2))
-                all_atom[i][3]=str(float(all_atom[i][3])+float(cube_list[2][2])*int(kyori)*2)
-
-
-
-
-            if float(all_atom[i][4]) > float(cube_list[2][3])*(-1):
-                kyori=(float(all_atom[i][4])-float(cube_list[2][3]))/(float(cube_list[2][3])*(-2))
-                all_atom[i][4]=str(float(all_atom[i][4])+float(cube_list[2][3])*int(kyori)*2)
-
-            elif float(all_atom[i][4]) < float(cube_list[2][3]):
-                kyori=(float(all_atom[i][4])+float(cube_list[2][3]))/(float(cube_list[2][3])*(-2))
-                all_atom[i][4]=str(float(all_atom[i][4])+float(cube_list[2][3])*int(kyori)*2)
-
-            if float(all_atom[i][5]) > float(cube_list[2][4])*(-1):
-                kyori=(float(all_atom[i][5])-float(cube_list[2][4]))/(float(cube_list[2][4])*(-2))
-                all_atom[i][5]=str(float(all_atom[i][5])+float(cube_list[2][4])*int(kyori)*2)
-
-            elif float(all_atom[i][5]) < float(cube_list[2][4]):
-                kyori=(float(all_atom[i][5])+float(cube_list[2][4]))/(float(cube_list[2][4])*(-2))
-                all_atom[i][5]=str(float(all_atom[i][5])+float(cube_list[2][4])*int(kyori)*2)
+            while float(all_atom[i][4]) > periodic_end[2]:
+                all_atom[i][4] = str(float(all_atom[i][4]) - L[2])
+            while float(all_atom[i][4]) < periodic_init[2]:
+                all_atom[i][4] = str(float(all_atom[i][4]) + L[2])
 
 
 
