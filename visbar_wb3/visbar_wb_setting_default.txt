@@ -1,0 +1,41 @@
+#---IsoValue---#
+IsoValuePositive 0.0151607764938
+IsoValueNegative -0.0151607764938
+IsoOpacityPositive 1.0
+IsoOpacityNegative 1.0
+DrawIsoInWirePositive Off
+DrawIsoInWireNegative Off
+
+#---Color---#
+IsoColorPositive 1.0 0.0 0.0
+IsoColorNegative 1.0 1.0 0.0
+OutLineColor 0.0 0.0 1.0
+BackGroundColor 1.0 1.0 1.0
+
+#---WindowSize---#
+WindowSize 1066 706
+
+#---Camera---#
+FocalPoint 22.0 22.0 -0.39412021637
+CameraPosition 22.0 22.0 375.893312702
+ParallelScale 38.4333189359
+ViewUp 0.0 1.0 0.0
+ClippingRange 335.649153135 428.350282435
+
+#---Label---#
+#NumberOnly:1
+#ElementOnly:2
+#EachNumber+Element:3
+#SerialNumber+Element:4
+LabelType 4
+
+#---DrawObject---#
+DrawBond On
+DrawAtom On
+DrawWaveFunction On
+DrawOutLine Off
+DrawAxis On
+DrawText Off
+DrawAtomLabel Off
+WatchParallelView On
+--end_setting--

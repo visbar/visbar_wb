@@ -1,0 +1,17 @@
+C C 3.0
+C H 2.2
+H C 2.2
+H H 1.0
+N N 2.0
+N H 1.5
+H N 1.5
+N C 2.0
+C N 2.0
+Ir N 4.0
+N Ir 4.0
+Ir C 4.0
+C Ir 4.0
+Ir H 2.5
+H Ir 2.5
+Ir Ir 4.8
+--end_setting--
